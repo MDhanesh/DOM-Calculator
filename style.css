@@ -1,0 +1,9 @@
+body {
+  background-color: green !important;
+}
+.btn {
+  background-color: gray;
+  color: azure;
+  justify-content: center;
+  align-items: center;
+}
