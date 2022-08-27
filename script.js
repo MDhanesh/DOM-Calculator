@@ -4,9 +4,15 @@ container.setAttribute("class", "container pt");
 document.body.append(container);
 //heading
 let nav = document.createElement("h1");
-nav.setAttribute("class", "text-center pb-5 text-warning");
+nav.setAttribute("class", "text-center  text-warning");
+nav.setAttribute("id", "title");
 nav.innerHTML = "CALCULATOR";
 container.append(nav);
+let p = document.createElement("p");
+p.setAttribute("class", "text-center pb-5");
+p.setAttribute("id", "description");
+p.innerHTML = "DOM Manipulation Calculator ";
+container.append(p);
 //main-row
 let row = document.createElement("div");
 row.setAttribute("class", "row");
@@ -276,6 +282,7 @@ row5.append(col54);
 //total button
 let total = document.createElement("input");
 total.setAttribute("class", "btn");
+total.setAttribute("id", "equal");
 total.setAttribute("type", "button");
 total.setAttribute("value", "=");
 total.setAttribute("onclick", "cal('=')");
